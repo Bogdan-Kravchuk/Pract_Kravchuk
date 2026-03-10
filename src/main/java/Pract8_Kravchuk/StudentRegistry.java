@@ -11,20 +11,11 @@ public class StudentRegistry {
         return Collections.unmodifiableMap(findByID);
     }
 
-    public static void main(String[] args) {
-        Student student1 = new Student("A", "123", "A@");
-        Student student2 = new Student("B", "12345","B@" );
-        Student student3 = new Student("C", "1234567890","C@");
-
-
-        addStudent(student1);
-        addStudent(student2);
-        addStudent(student3);
-
-
-        findById("12345");
-        containsEmail("A@");
+    public static Set<String> getEmailSet() {
+        return Collections.unmodifiableSet(emailSet);
     }
+
+
 
    public static void   clearStudents(){
         addStudentList.clear();
@@ -78,6 +69,7 @@ public class StudentRegistry {
 
         System.out.println("Студента " + studentDelete.name() + " видалено успішно!");
     }
+
 
     }
 
