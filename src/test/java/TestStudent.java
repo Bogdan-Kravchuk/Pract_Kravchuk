@@ -1,14 +1,13 @@
-import Pract8_Kravchuk.Student;
-import Pract8_Kravchuk.StudentRegistry;
+import Pacts.Pract8_Kravchuk.Student;
+import Pacts.Pract8_Kravchuk.StudentRegistry;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import static Pract8_Kravchuk.StudentRegistry.*;
+import static Pacts.Pract8_Kravchuk.StudentRegistry.*;
 
 public class TestStudent {
 

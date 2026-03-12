@@ -1,6 +1,6 @@
-package Pract8_Kravchuk;
+package Pacts.Pract8_Kravchuk;
 
-import static Pract8_Kravchuk.StudentRegistry.*;
+import static Pacts.Pract8_Kravchuk.StudentRegistry.*;
 
 public class MainStudent {
 
