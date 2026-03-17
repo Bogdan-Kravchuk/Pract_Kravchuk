@@ -1,4 +1,4 @@
-package Pract8_Kravchuk;
+package Pacts.Pract8_Kravchuk;
 
 import java.util.ArrayList;
 import java.util.List;
