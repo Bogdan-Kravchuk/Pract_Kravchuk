@@ -20,9 +20,9 @@ public class DateTimeLab {
         return Math.abs(Duration.between(instantEventA, instantEventB).toMinutes());
     }
 
-    public static ZonedDateTime startInZone(Event e, String zone) {
+    public static ZonedDateTime startInZone(Event e, ZoneId zone) {
         ZonedDateTime original = ZonedDateTime.of(e.getStart(), e.getZone());
-        return original.withZoneSameInstant(ZoneId.of(zone));
+        return original.withZoneSameInstant(zone);
     }
 
 }

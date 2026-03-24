@@ -19,7 +19,7 @@ public class Main {
 
         ZoneId London = ZoneId.of("Europe/London");
         Event event2 = new Event("Event 2"  , LocalDateTime.of(2026, Month.MARCH, 24, 11,58),10,  Kyiv, "track2");
-        Event event3 = new Event("Event 3"  , LocalDateTime.of(2026, Month.MARCH, 24, 5,58),10,  Kyiv, "track2");
+        Event event3 = new Event("Event 3"  , LocalDateTime.of(2026, Month.MARCH, 24, 5,58),10,  London, "track2");
         Event event4 = new Event("Event 4"  , LocalDateTime.of(2025, Month.MARCH, 24, 5,58),10,  Kyiv, "track2");
         Event event5 = new Event("Event 5"  , LocalDateTime.of(2024, Month.MARCH, 24, 5,58),10,  Kyiv, "track2");
 
@@ -47,5 +47,7 @@ public class Main {
         System.out.println("----------------------------");
         EventLab.LambdaRefactorLab.sortMethodRef(eventList);
         System.out.println(eventList);
+        System.out.println("----------------------------");
+        System.out.println(DateTimeLab.startInZone(event3, Kyiv));
     }
 }
