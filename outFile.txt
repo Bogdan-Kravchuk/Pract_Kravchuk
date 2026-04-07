@@ -1,0 +1,3 @@
+Payment[id=123, email=@user, status=NEW, amountCents=10.0]
+Payment[id=456, email=@user1, status=PAID, amountCents=50.0]
+Payment[id=789, email=@user2, status=FAILED, amountCents=70.0]
